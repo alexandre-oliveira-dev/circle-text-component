@@ -6,7 +6,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "post": "git add . && git commit -m 'update' && git push && npm publish"
+    "post": "git add . && git commit -m 'update' && git push && npm publish",
+    "test2":"sh ./script.sh"
   },
   "author": "https://www.linkedin.com/in/alexandre-oliveira-0b91aa172/",
   "license": "ISC"
