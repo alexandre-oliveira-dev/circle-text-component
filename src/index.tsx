@@ -1,5 +1,5 @@
 import {PropsWithoutRef, SVGProps} from "react";
-import "../../pages/home/styles.css";
+
 /* eslint-disable @typescript-eslint/ban-types */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
