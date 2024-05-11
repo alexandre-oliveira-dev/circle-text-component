@@ -1,6 +1,6 @@
 {
   "name": "circle-text-component",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "create circle text format",
   "repository": "https://github.com/alexandre-oliveira-dev/circle-text-component",
   "main": "index.js",
