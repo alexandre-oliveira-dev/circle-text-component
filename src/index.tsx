@@ -5,13 +5,13 @@ import "../../pages/home/styles.css";
 
 type TagProps = {
   text: string;
-  letterSpacing: number;
-  fontSize: number;
-  d: string;
-  textColor: string;
+  letterSpacing?: number;
+  fontSize?: number;
+  d?: string;
+  textColor?: string;
 } & PropsWithoutRef<SVGProps<any>>;
 
-export default function CircleText({
+function CircleText({
   text,
   letterSpacing,
   fontSize,
@@ -50,3 +50,5 @@ export default function CircleText({
     </>
   );
 }
+
+export {CircleText};
