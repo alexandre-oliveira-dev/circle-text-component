@@ -3,9 +3,22 @@ import "../../pages/home/styles.css";
 /* eslint-disable @typescript-eslint/ban-types */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
-type TagProps = {} & PropsWithoutRef<SVGProps<any>>;
+type TagProps = {
+  text: string;
+  letterSpacing: number;
+  fontSize: number;
+  d: string;
+  textColor: string;
+} & PropsWithoutRef<SVGProps<any>>;
 
-export default function CircleText({...props}: TagProps) {
+export default function CircleText({
+  text,
+  letterSpacing,
+  fontSize,
+  d,
+  textColor,
+  ...props
+}: TagProps) {
   return (
     <>
       <svg
@@ -26,8 +39,12 @@ export default function CircleText({...props}: TagProps) {
              a 40,40 0 1,1 90,0
              40,40 0 1,1 -90,0"
         />
-        <text fill="#fff" letterSpacing={2} fontSize={18}>
-          <textPath href="#circlePath">Download cv - Download cv -</textPath>
+        <text
+          fill={textColor ?? "#000"}
+          letterSpacing={letterSpacing || 2}
+          fontSize={fontSize || 18}
+        >
+          <textPath href="#circlePath">{text}</textPath>
         </text>
       </svg>
     </>
